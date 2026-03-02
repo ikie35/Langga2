@@ -206,7 +206,7 @@ function initScrollAnimations() {
 function initLightbox() {
     const lightbox = document.getElementById('lightbox');
     const lightboxImg = document.getElementById('lightboxImg');
-    
+
     if (!lightbox || !lightboxImg) return;
 
     // Click gallery items to open lightbox
@@ -235,4 +235,4 @@ function initLightbox() {
 }
 
 // Console message
-console.log('💜 Happy 3rd Monthsary — Made with love! 💜');
+console.log('💜 Happy 2nd Monthsary — Made with love! 💜');
