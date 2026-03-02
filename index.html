@@ -7,9 +7,6 @@
     <title>Happy 2nd Monthsary My Langga 💜</title>
     <meta name="description" content="A special page for our 2nd monthsary — two months of choosing love every day.">
     <link rel="stylesheet" href="styles.css">
-    <link
-        href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400;1,700&family=Outfit:wght@300;400;500;600;700&family=Dancing+Script:wght@400;700&display=swap"
-        rel="stylesheet">
 </head>
 
 <body>
@@ -32,91 +29,77 @@
         <img id="lightboxImg" src="" alt="Full view">
     </div>
 
-    <!-- Welcome Screen -->
+    <!-- ============================================
+         WELCOME SCREEN — CINEMATIC
+         ============================================ -->
     <section class="welcome-screen" id="welcome">
-        <div class="welcome-overlay"></div>
+        <div class="welcome-bg"></div>
         <div class="welcome-stars"></div>
         <div class="welcome-content">
-            <div class="welcome-emoji-ring">
-                <span class="ring-emoji">💜</span>
-                <div class="orbit-hearts">
-                    <span class="orbit-heart">✨</span>
-                    <span class="orbit-heart">💫</span>
-                    <span class="orbit-heart">✨</span>
-                    <span class="orbit-heart">💫</span>
-                </div>
-            </div>
-            <p class="welcome-month">March 3, 2026</p>
-            <h1 class="welcome-title">Happy 2nd<br><span class="em-gold">Monthsary</span></h1>
-            <p class="welcome-tagline">Two months of love, laughter, and building something
+            <p class="welcome-date">March 3, 2026</p>
+            <h1 class="welcome-title">
+                Happy 2nd
+                <span class="title-bold">Monthsary</span>
+            </h1>
+            <p class="welcome-subtitle">Two months of love, laughter, and building something
                 beautiful together — this is just the beginning 💜</p>
             <button class="enter-btn" onclick="enterSite()">
-                <span>Open Your Surprise</span>
-                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                    <path
-                        d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z" />
+                <span>Start the Journey</span>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M5 12h14M12 5l7 7-7 7" />
                 </svg>
             </button>
         </div>
     </section>
 
-    <!-- Main Content -->
+    <!-- ============================================
+         MAIN CONTENT
+         ============================================ -->
     <main class="main-content" id="mainContent">
 
-        <!-- Hero Section -->
+        <!-- HERO — IMMERSIVE FULLSCREEN -->
         <section class="hero-section">
-            <div class="hero-container">
-                <div class="hero-text">
-                    <div class="hero-badge">
-                        <span class="badge-sparkle">✨</span>
-                        <span>Our Love Story</span>
+            <div class="hero-bg-image">
+                <img src="featured.jpg" alt="Us Together">
+            </div>
+            <div class="hero-bg-overlay"></div>
+            <div class="hero-inner">
+                <span class="hero-label">Our Love Story</span>
+                <h1 class="hero-heading">Two<br>Months<br>of <em>Us</em></h1>
+                <p class="hero-description">Sixty days of choosing each other. Every late-night call,
+                    every "I love you," every moment we share across the distance — they all add up to
+                    something truly beautiful. 💜</p>
+                <div class="hero-counter">
+                    <div class="counter-block">
+                        <span class="counter-value" id="counterDays">0</span>
+                        <span class="counter-label">Days</span>
                     </div>
-                    <h1 class="hero-title">Two Months<br>of <em>Us</em></h1>
-                    <p class="hero-description">Sixty days of choosing each other. Every late-night call,
-                        every "I love you," every moment we share across the distance — they all add up to
-                        something truly beautiful. I'm grateful for every single one. 💜</p>
-                    <div class="hero-counter">
-                        <div class="counter-item">
-                            <span class="counter-value" id="counterDays">0</span>
-                            <span class="counter-label">Days</span>
-                        </div>
-                        <div class="counter-separator"></div>
-                        <div class="counter-item">
-                            <span class="counter-value" id="counterHours">0</span>
-                            <span class="counter-label">Hours</span>
-                        </div>
-                        <div class="counter-separator"></div>
-                        <div class="counter-item">
-                            <span class="counter-value" id="counterMinutes">0</span>
-                            <span class="counter-label">Minutes</span>
-                        </div>
-                        <div class="counter-separator"></div>
-                        <div class="counter-item">
-                            <span class="counter-value" id="counterSeconds">0</span>
-                            <span class="counter-label">Seconds</span>
-                        </div>
+                    <div class="counter-block">
+                        <span class="counter-value" id="counterHours">0</span>
+                        <span class="counter-label">Hours</span>
                     </div>
-                </div>
-                <div class="hero-photo">
-                    <div class="photo-card">
-                        <img src="featured.jpg" alt="Us Together">
-                        <div class="photo-badge">
-                            <span>💜</span> Forever Yours
-                        </div>
+                    <div class="counter-block">
+                        <span class="counter-value" id="counterMinutes">0</span>
+                        <span class="counter-label">Minutes</span>
                     </div>
-                    <div class="hero-glow"></div>
+                    <div class="counter-block">
+                        <span class="counter-value" id="counterSeconds">0</span>
+                        <span class="counter-label">Seconds</span>
+                    </div>
                 </div>
             </div>
         </section>
 
-        <!-- Love Letter Section -->
+        <!-- DIVIDER -->
+        <div class="section-divider">
+            <div class="divider-line"></div>
+            <span class="divider-icon">💜</span>
+            <div class="divider-line"></div>
+        </div>
+
+        <!-- LOVE LETTER -->
         <section class="letter-section">
             <div class="letter-wrapper">
-                <div class="letter-decoration">
-                    <div class="deco-line"></div>
-                    <span class="deco-star">💜</span>
-                    <div class="deco-line"></div>
-                </div>
                 <div class="letter-card">
                     <div class="letter-header">
                         <span class="letter-emoji">💌</span>
@@ -135,7 +118,8 @@
 
                         <p>I've learned so much from our small fights and tampohan — they didn't break us, they made us
                             stronger. Every misunderstanding taught me to be more patient, every makeup reminded me why
-                            I chose you in the first place. And I promise to love you even more as we count the days
+                            I
+                            chose you in the first place. And I promise to love you even more as we count the days
                             papunta sa ating kasal, hehehe. 💜</p>
 
                         <p>I promise to keep on loving you every single day — even in the bad moments, even when things
@@ -152,13 +136,18 @@
             </div>
         </section>
 
-        <!-- Photo Gallery Section -->
+        <!-- DIVIDER -->
+        <div class="section-divider">
+            <div class="divider-line"></div>
+            <span class="divider-icon">✨</span>
+            <div class="divider-line"></div>
+        </div>
+
+        <!-- PHOTO GALLERY -->
         <section class="gallery-section">
             <div class="section-header">
-                <div class="header-icon">
-                    <span>📸</span>
-                </div>
-                <h2>Our <span class="accent">Moments</span></h2>
+                <p class="section-eyebrow">Our Memories</p>
+                <h2>Moments <em>Together</em></h2>
                 <p class="section-subtitle">Every screenshot tells a story of us 💜</p>
             </div>
 
@@ -239,13 +228,18 @@
             <p class="gallery-caption">Every call with you is where I want to be forever ✨</p>
         </section>
 
-        <!-- Reasons Section -->
+        <!-- DIVIDER -->
+        <div class="section-divider">
+            <div class="divider-line"></div>
+            <span class="divider-icon">💕</span>
+            <div class="divider-line"></div>
+        </div>
+
+        <!-- REASONS -->
         <section class="reasons-section">
             <div class="section-header">
-                <div class="header-icon">
-                    <span>💕</span>
-                </div>
-                <h2>Why I <span class="accent">Love You</span></h2>
+                <p class="section-eyebrow">From My Heart</p>
+                <h2>Why I <em>Love You</em></h2>
                 <p class="section-subtitle">More reasons every single day 💜</p>
             </div>
             <div class="reasons-grid">
@@ -282,13 +276,11 @@
             </div>
         </section>
 
-        <!-- Timeline Section -->
+        <!-- TIMELINE -->
         <section class="timeline-section">
             <div class="section-header">
-                <div class="header-icon">
-                    <span>📅</span>
-                </div>
-                <h2>Our <span class="accent">Journey</span></h2>
+                <p class="section-eyebrow">Our Story</p>
+                <h2>The <em>Journey</em></h2>
                 <p class="section-subtitle">Every chapter of our love story 💜</p>
             </div>
             <div class="timeline">
@@ -311,14 +303,6 @@
                 <div class="timeline-item">
                     <div class="timeline-dot"></div>
                     <div class="timeline-card">
-                        <span class="timeline-date">February 3, 2026</span>
-                        <h3>1st Monthsary ✨</h3>
-                        <p>Our very first monthsary — proof that real love doesn't need proximity!</p>
-                    </div>
-                </div>
-                <div class="timeline-item">
-                    <div class="timeline-dot"></div>
-                    <div class="timeline-card">
                         <span class="timeline-date">February 14, 2026</span>
                         <h3>Our First Valentine's ❤️</h3>
                         <p>Our first Valentine's Day together — even from a distance, the love was overwhelming.</p>
@@ -327,16 +311,15 @@
                 <div class="timeline-item">
                     <div class="timeline-dot active"></div>
                     <div class="timeline-card highlight">
-                        <span class="timeline-date">Today</span>
+                        <span class="timeline-date">March 3, 2026</span>
                         <h3>2nd Monthsary — Still Choosing You 🎉</h3>
-                        <p>Two months down, forever to go. Here's to every beautiful moment ahead of us, Langga! 💜
-                        </p>
+                        <p>Two months down, forever to go. Here's to every beautiful moment ahead of us, Langga! 💜</p>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- Promise Section -->
+        <!-- PROMISE -->
         <section class="promise-section">
             <div class="promise-card">
                 <div class="promise-icon">💜</div>
@@ -356,7 +339,7 @@
             </div>
         </section>
 
-        <!-- Footer -->
+        <!-- FOOTER -->
         <footer class="footer">
             <div class="footer-emojis">💜 ✨ 💫</div>
             <p>Made with love, just for you</p>
